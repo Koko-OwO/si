@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+ @media (min-width:576px) and (max-width:767px) {
+
+    .pollo {
+        width: 100;
+    }
+
+    .ola {
+        display: none;
+    }
+ }
+ @media (min-width:100px) and (max-width:576px) {
+
+    .pollo {
+        width: 100;
+    }
+
+    .ola {
+        display: none;
+    }
+ }
+ @media (min-width:991px)  {
+
+    .pollo {
+        display: none;
+    }
+
+    .ola {
+        width: 100;
+    }
+ }
+
+
+
+
+      efecto del gato subiendo
+  .gato {
+    position: relative;
+    top: 70px;
+    
+    /* transform: translateX(0%); */
+    opacity: 0;
+    transition: top 1s ease-in, opacity 1s ease-in;
+  }
+  
+  .animate-in {
+    top: 0;
+    opacity: 1;
+  }
+
+  /* termina efecto */
+
