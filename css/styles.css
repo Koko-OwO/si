@@ -1,62 +1,123 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
 }
 
+.marginnav {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 
+@font-face {
+  font-family: amaregu;
+  src: url(../assets/fonts/amaregu.ttf);
+}
+@font-face {
+  font-family: amabol;
+  src: url(../assets/fonts/amabol.ttf);
+}
+.color {
+  color: white;
+  transition: 1s;
+}
 
+.navalin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
- @media (min-width:576px) and (max-width:767px) {
-
-    .pollo {
-        width: 100;
-    }
-
-    .ola {
-        display: none;
-    }
- }
- @media (min-width:100px) and (max-width:576px) {
-
-    .pollo {
-        width: 100;
-    }
-
-    .ola {
-        display: none;
-    }
- }
- @media (min-width:991px)  {
-
-    .pollo {
-        display: none;
-    }
-
-    .ola {
-        width: 100;
-    }
- }
-
-
-
-
-      efecto del gato subiendo
-  .gato {
-    position: relative;
-    top: 70px;
-    
-    /* transform: translateX(0%); */
-    opacity: 0;
-    transition: top 1s ease-in, opacity 1s ease-in;
+@media (min-width: 100px) and (max-width: 990px) {
+  .pollo {
+    width: 100;
   }
-  
-  .animate-in {
-    top: 0;
-    opacity: 1;
+  .ola {
+    display: none;
   }
+  .tuki {
+    box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.255);
+  }
+}
+@media (min-width: 991px) {
+  .pollo {
+    display: none;
+  }
+  .ola {
+    width: 100;
+  }
+  .tuki {
+    box-shadow: 0 1rem 5rem rgba(255, 255, 255, 0.255);
+    height: 8rem;
+  }
+}
+.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 
-  /* termina efecto */
+.quieto {
+  transition: 1s;
+  margin-top: 10rem;
+}
 
+.dropotblack {
+  background-color: black;
+  font-size: 20pt;
+  transition: 1s;
+}
+
+.slider {
+  width: 100%;
+  height: 12rem;
+  margin-top: 5rem;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: 216rem;
+}
+
+.slider .slide {
+  width: 12rem;
+}
+
+.slider .slide img {
+  width: 12rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-72rem);
+  }
+}
+.gatoSubiendo {
+  position: relative;
+  top: 70px;
+  /* transform: translateX(0%); */
+  opacity: 0;
+  transition: top 1s ease-in, opacity 1s ease-in;
+}
+
+.animate-in {
+  top: 0;
+  opacity: 1;
+}
+
+/* termina efecto */
+.nav {
+  font-family: amabol;
+  font-size: 25pt;
+}/*# sourceMappingURL=styles.css.map */
