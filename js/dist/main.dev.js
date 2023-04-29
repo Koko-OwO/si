@@ -1,13 +1,11 @@
+"use strict";
 
-
-
-
-const animationImages = document.querySelectorAll('.gatoSubiendo');
+var animationImages = document.querySelectorAll('.gatoSubiendo');
 
 function animateIn() {
-  animationImages.forEach(image => {
-    const elementTop = image.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+  animationImages.forEach(function (image) {
+    var elementTop = image.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
 
     if (elementTop < windowHeight) {
       image.classList.add('animate-in');
@@ -16,16 +14,11 @@ function animateIn() {
 }
 
 window.addEventListener('scroll', animateIn);
-window.addEventListener('load', animateIn);
-
-
-// window.addEventListener("scroll", function(){
+window.addEventListener('load', animateIn); // window.addEventListener("scroll", function(){
 //   var nav = document.querySelector("slider");
 //   nav.classList.toggle("tuki",this.window.scrollY>0)
 // })
-
 // window.addEventListener("scroll", function(){
 //   var nav = document.querySelector(".container");
 //   nav.classList.toggle("altu",this.window.scrollY>0)
 // })
-

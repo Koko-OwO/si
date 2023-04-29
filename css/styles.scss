@@ -1,4 +1,4 @@
-
+$red:#ff55ff !important;
 
 
 
@@ -101,11 +101,22 @@ transition: 1s;
   transition: 1s;
 }
 
+
+
+
+
 .slider {
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: 12rem;
+  height: auto;
   margin-top: 5rem;
   overflow: hidden;
+  padding: 1rem;
+  
+  
+  
+ 
 }
 
 .slider {
@@ -113,17 +124,23 @@ transition: 1s;
     display: flex;
     animation: scroll 30s linear infinite;
     width: calc(12rem * 18);
+    transition: transform 2s;
   }
 }
 .slider {
   .slide {
     width: 12rem;
+    margin: 1.5rem;
+    color: black;
+    
   }
 }
 .slider {
   .slide{
     img {
       width: 12rem;
+      padding: 1rem;
+     
       
     }
   }
@@ -131,11 +148,31 @@ transition: 1s;
 
 @keyframes scroll {
   0% {
-    transform: translate(0);
+    
+    transform: translateX(-40rem);
   }
   100% {
+    
     transform: translate( calc(-8rem * 9) );
   }
+  
+}
+.lingote {
+ 
+    box-shadow: 0 0rem 1.5rem  white ;
+    border-radius: 15%;
+    
+  
+  
+}
+.slider {
+  .slide:hover {
+      box-shadow: 0 0rem 1.5rem  $red ;
+    border-radius: 50%;
+    color: white;
+     
+      
+    }
   
 }
 

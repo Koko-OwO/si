@@ -37,9 +37,11 @@ body {
   .pollo {
     width: 100;
   }
+
   .ola {
     display: none;
   }
+
   .tuki {
     box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.255);
   }
@@ -48,9 +50,11 @@ body {
   .pollo {
     display: none;
   }
+
   .ola {
     width: 100;
   }
+
   .tuki {
     box-shadow: 0 1rem 5rem rgba(255, 255, 255, 0.255);
     height: 8rem;
@@ -87,7 +91,7 @@ body {
 .slider .slide-track {
   display: flex;
   animation: scroll 30s linear infinite;
-  width: 216rem;
+  width: calc(12rem * 18);
   transition: transform 2s;
 }
 
@@ -107,7 +111,7 @@ body {
     transform: translateX(-40rem);
   }
   100% {
-    transform: translate(-72rem);
+    transform: translate(calc(-8rem * 9));
   }
 }
 .lingote {
@@ -138,4 +142,4 @@ body {
 .nav {
   font-family: amabol;
   font-size: 25pt;
-}/*# sourceMappingURL=styles.css.map */
+}
