@@ -1,4 +1,8 @@
-$red:#ff55ff !important;
+$bla:#000;
+$whi:#fff;
+$ora:#d17418;
+$vio:#3f0b4c;
+
 
 
 
@@ -12,6 +16,7 @@ body {
     margin: 0;
     background-color: black;
     color: white;
+    user-select: none;
 
 }
 .marginnav {
@@ -31,7 +36,7 @@ body {
 
 .color {
   color: white;
-  transition: 1s;
+  transition: transform 1s;
 
 }
 
@@ -39,6 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform -1s;
 }
 
 @media (min-width:100px) and (max-width:990px) {
@@ -82,11 +88,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 .quieto{
-transition: 1s;
-  margin-top: 10rem ;
+  transition: 1s;
+  margin-top: 11rem ;
   
 }
 // .altu {
@@ -122,8 +128,10 @@ transition: 1s;
 .slider {
   .slide-track {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 60s ease-in infinite;
     width: calc(12rem * 18);
+    
+    animation-delay: 25ms;
     transition: transform 2s;
   }
 }
@@ -148,14 +156,37 @@ transition: 1s;
 
 @keyframes scroll {
   0% {
+    opacity: 0.5;
+    transition: transform 5s;
+    transform: translate(0);
+  }
+  5% {
+    opacity: 0.5;
+    transition: transform 5s;
+  }
+  10% {
+    opacity: 1;
+    transition: transform 5s;
+  }
+  30% {
     
-    transform: translateX(-40rem);
+    transform: translate( calc(-8rem * 18) );
+    transition: transform 5s;
+  }
+  80% {
+    
+    transform: translate( calc(+8rem * 18) );
+    transition: transform 5s;
+  }
+  90% {
+    opacity: 1;
+    transition: transform 5s;
   }
   100% {
-    
-    transform: translate( calc(-8rem * 9) );
+    opacity: 0;
+    transition: transform 5s;
+    transform: translate(0);
   }
-  
 }
 .lingote {
  
@@ -167,13 +198,33 @@ transition: 1s;
 }
 .slider {
   .slide:hover {
-      box-shadow: 0 0rem 1.5rem  $red ;
+      box-shadow: 0 0rem 1.5rem  $vio ;
     border-radius: 50%;
     color: white;
      
       
     }
   
+}
+
+.hero  {
+  background-color: $ora;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/img/fondo\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: transform 1s;
+  padding: 5rem 3rem;
+  
+  
+}
+
+.text-logo {
+  font-size: 200%;
+  height: auto;
+  width: auto;
 }
 
 
