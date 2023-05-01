@@ -76,6 +76,7 @@ body {
   }
   .logohero {
     max-width: 10rem;
+    transition: 1s;
   }
   .image {
     max-width: 6rem;
@@ -144,6 +145,7 @@ body {
   .logohero {
     max-width: 20rem;
     max-height: 18rem;
+    transition: 1s;
   }
 }
 
@@ -173,10 +175,15 @@ body {
   .borderseis {
     border-bottom: .2rem solid white;
   }
+  .borderdemas {
+    border-left: .2rem solid white;
+    border-top: .2rem solid white;
+  }
 }
 @media (min-width:991px) and (max-width:1440px) {
   .logohero {
     max-width: 20rem;
+    transition: 1s;
   }
 }
 
@@ -243,6 +250,8 @@ body {
     margin: 1.5rem;
     color: black;
     transition: transform 1s;
+    height: 12rem;
+    transition: 1s;
 
     
   }
@@ -306,6 +315,8 @@ body {
       box-shadow: 0 0rem 1.5rem  $vio ;
     border-radius: 50%;
     color: white;
+    zoom: 150%;
+    transition: 1s;
      
       
     }
@@ -328,11 +339,32 @@ body {
   
 }
 
+.image:hover {
+//   // width: 50rem;
+//   position: relative;
+//   transform:  0px 45px;
+    zoom: 150%;
+}
+
 .text-logo {
   font-size: cover;
   height:75%;
   width: auto;
   font-size:4rem;
+  transition: 1s;
+}
+.text-logo:hover {
+  rotate: -360deg;
+  transition: 1s;
+}
+
+.m2 {
+  rotate: -360deg;
+  transition: 1s;
+ }
+.m2:hover {
+ rotate: 180deg;
+ transition: 1s;
 }
 
 .divi {
@@ -344,6 +376,12 @@ body {
  
 }
 
+.logohero:hover {
+  // position: relative;
+  // top: -50rem;
+  // transition: 12s;
+ zoom: 125%;
+}
 
 
 
@@ -373,6 +411,10 @@ body {
   opacity: 1;
 }
 
+input {
+  height: 3rem;
+  font-size: 3rem;
+}
 
 
 
@@ -442,8 +484,9 @@ body {
   
 }
 .salidademensaje {
-  width:  3rem;
+  width:  5rem;
   color: $whi;
   background-color: #000;
+  font-size: 2rem;
   
 }
