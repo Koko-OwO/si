@@ -9,6 +9,8 @@ $vio:#3f0b4c;
 
 
 * {
+  padding: 0;
+  margin: 0;
     box-sizing: border-box;
 }
 body {
@@ -71,6 +73,13 @@ body {
   .seva {
     display: none;
   }
+  .logohero {
+    max-width: 10rem;
+  }
+  .image {
+    max-width: 6rem;
+    transition: 2s;
+  }
 
 }
 
@@ -125,6 +134,13 @@ body {
   
 }
 
+@media (min-width:767.5px) and (max-width:991px) {
+  .logohero {
+    max-width: 20rem;
+    max-height: 18rem;
+  }
+}
+
 @media (min-width:100px) and (max-width:767px) {
   .borderuno {
     border-right: .2rem solid white;
@@ -152,6 +168,11 @@ body {
     border-bottom: .2rem solid white;
   }
 }
+@media (min-width:991px) and (max-width:1440px) {
+  .logohero {
+    max-width: 20rem;
+  }
+}
 
 
 .top {
@@ -160,11 +181,13 @@ body {
   top: 0;
   width: 100%;
   z-index: 10;
+ 
 }
 .quieto{
   transition: 1s;
   margin-top: 11rem ;
   width: 100%;
+
   
 }
 // .altu {
