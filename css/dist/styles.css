@@ -80,6 +80,11 @@ body {
     transition: transform 1s;
   }
 
+  .ola:hover {
+    width: 15rem;
+    transition: 1s;
+  }
+
   .tuki {
     box-shadow: 0 1rem 5rem rgba(255, 255, 255, 0.255);
     height: 8rem;
@@ -159,6 +164,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 10;
+  height: auto;
 }
 
 .quieto {
