@@ -7,11 +7,15 @@ body {
   margin: 0;
   background-color: black;
   color: white;
+  user-select: none;
+  transition: transform 1s;
+  font-family: amabol;
 }
 
 .marginnav {
   margin-left: 2rem;
   margin-right: 2rem;
+  transition: transform 1s;
 }
 
 @font-face {
@@ -34,31 +38,98 @@ body {
   transition: transform -1s;
 }
 
-@media (min-width: 100px) and (max-width: 990px) {
+@media (min-width: 100px) and (max-width: 991px) {
   .pollo {
     width: 100;
+    transition: transform 1s;
   }
 
   .ola {
     display: none;
+    transition: transform 1s;
   }
 
   .tuki {
     box-shadow: 0 1rem 3rem rgba(255, 255, 255, 0.255);
+    transition: transform 1s;
+  }
+
+  .seva {
+    display: none;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 991.5px) {
   .pollo {
     display: none;
+    transition: transform 1s;
   }
 
   .ola {
     width: 100;
+    transition: transform 1s;
   }
 
   .tuki {
     box-shadow: 0 1rem 5rem rgba(255, 255, 255, 0.255);
     height: 8rem;
+    transition: transform 1s;
+  }
+
+  .borderuno {
+    border-right: 0.2rem solid white;
+    border-top: 0.2rem solid white;
+  }
+
+  .borderdos {
+    border-bottom: 0.2rem solid white;
+    padding: 0.7rem;
+  }
+
+  .bordertres {
+    border-right: 0.2rem solid white;
+  }
+
+  .bordercuatro {
+    border-bottom: 0.2rem solid white;
+  }
+
+  .bordercinco {
+    border-right: 0.2rem solid white;
+  }
+
+  .borderseis {
+    border-bottom: 0.2rem solid white;
+  }
+}
+@media (min-width: 100px) and (max-width: 767px) {
+  .borderuno {
+    border-right: 0.2rem solid white;
+    border-top: 0.2rem solid white;
+  }
+
+  .borderdos {
+    border-bottom: 0.2rem solid white;
+    padding: 0.7rem;
+  }
+
+  .bordertres {
+    border-left: 0.2rem solid white;
+  }
+
+  .bordercuatrodos {
+    border-left: 0.2rem solid white;
+  }
+
+  .bordercinco {
+    border-top: 0.2rem solid white;
+  }
+
+  .bordercincodos {
+    border-top: 0.2rem solid white;
+  }
+
+  .borderseis {
+    border-bottom: 0.2rem solid white;
   }
 }
 .top {
@@ -71,6 +142,7 @@ body {
 .quieto {
   transition: 1s;
   margin-top: 11rem;
+  width: 100%;
 }
 
 .dropotblack {
@@ -101,6 +173,7 @@ body {
   width: 12rem;
   margin: 1.5rem;
   color: black;
+  transition: transform 1s;
 }
 
 .slider .slide img {
@@ -110,12 +183,12 @@ body {
 
 @keyframes scroll {
   0% {
-    opacity: 0.5;
+    opacity: 0;
     transition: transform 5s;
     transform: translate(0);
   }
-  5% {
-    opacity: 0.5;
+  3% {
+    opacity: 0;
     transition: transform 5s;
   }
   10% {
@@ -146,16 +219,53 @@ body {
 }
 
 .slider .slide:hover {
+  transition: transform 1s;
   box-shadow: 0 0rem 1.5rem #3f0b4c;
   border-radius: 50%;
   color: white;
 }
 
 .hero {
-  background-color: #d17418;
   width: 100%;
-  height: 40rem;
-  background-image: url(../assets/img/);
+  height: auto;
+  background-image: url(../assets/img/fondo1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: transform 1s;
+  padding: 5rem 3rem;
+  margin: 0;
+  font-family: amabol;
+}
+
+.text-logo {
+  font-size: cover;
+  height: 75%;
+  width: auto;
+  font-size: 4rem;
+}
+
+.divi {
+  height: 12rem;
+}
+
+.btn-enviar {
+  border-radius: 15% 0%;
+}
+
+.entrada {
+  position: relative;
+  left: 100px;
+  top: -100px;
+  /* transform: translateX(0%); */
+  opacity: 0;
+  transition: top 2s ease-in, opacity 2s ease-in;
+}
+
+.animateentra {
+  top: 0;
+  left: 0;
+  opacity: 1;
 }
 
 .gatoSubiendo {
@@ -175,4 +285,39 @@ body {
 .nav {
   font-family: amabol;
   font-size: 25pt;
+}
+
+.btnn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.offi {
+  background-color: #000;
+  color: white;
+}
+
+.btndos {
+  max-width: 7rem;
+}
+
+.maxtext {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.tuki2 {
+  box-shadow: 0 1rem 5rem rgba(255, 255, 255, 0.255);
+  height: auto;
+  transition: transform 1s;
+}
+
+.inputo {
+  width: 100%;
+}
+
+.salidademensaje {
+  width: 3rem;
+  color: #fff;
+  background-color: #000;
 }

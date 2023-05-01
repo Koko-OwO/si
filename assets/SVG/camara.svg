@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 210.5">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-width: 5px;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <g id="Capa_35" data-name="Capa 35">
+    <g>
+      <rect class="cls-2" x="2.5" y="30.83" width="255" height="177.17" rx="10.74" ry="10.74"/>
+      <polygon class="cls-3" points="57.52 25.16 30.92 25.16 36.04 19.29 53.51 19.29 57.52 25.16"/>
+      <polygon class="cls-1" points="180.1 22.22 83.9 22.22 102.43 1 165.62 1 180.1 22.22"/>
+      <g>
+        <circle class="cls-1" cx="130" cy="119.41" r="73.63"/>
+        <g>
+          <path class="cls-4" d="m132,148.37l67.66-37.94s6.24,42.82-25.53,62.8l-42.14-24.86Z"/>
+          <path class="cls-4" d="m105.85,134.1l66.48,39.98s-34.11,26.63-67.2,8.94l.72-48.92Z"/>
+          <path class="cls-4" d="m102.67,104.7l-.46,77.58s-40.31-15.74-41.98-53.23l42.43-24.35Z"/>
+          <path class="cls-4" d="m128.28,89.57l-67.5,38.23s-6.42-42.79,25.26-62.91l42.24,24.68Z"/>
+          <path class="cls-4" d="m153.7,103.7l-66.58-39.81s34.04-26.72,67.18-9.11l-.59,48.92Z"/>
+          <path class="cls-4" d="m156.37,133.12l.13-77.58s40.37,15.57,42.2,53.05l-42.33,24.53Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
