@@ -105,6 +105,22 @@ body {
   .borderseis {
     border-bottom: 0.2rem solid white;
   }
+  .hero {
+    width: 100%;
+    height: auto;
+    background-image: url(../assets/img/fondo1.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: transform 1s;
+    padding: 5rem 3rem;
+    margin: 0;
+    font-family: amabol;
+    max-height: 40rem;
+  }
+  .max {
+    max-height: 30rem;
+  }
 }
 @media (min-width: 767.5px) and (max-width: 991px) {
   .logohero {
@@ -291,6 +307,7 @@ body {
 }
 
 .logohero:hover {
+  transition: 1s;
   zoom: 125%;
 }
 

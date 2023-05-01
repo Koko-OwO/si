@@ -139,6 +139,27 @@ body {
     border-bottom: .2rem solid white;
   }
   
+
+  
+  .hero  {
+  
+    width: 100%;
+    height: auto;
+    background-image: url(../assets/img/fondo1.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: transform 1s;
+    padding: 5rem 3rem;
+    margin:0;
+    font-family: amabol;
+    max-height: 40rem;
+    
+    
+  }
+  .max {
+    max-height: 30rem;
+  }
 }
 
 @media (min-width:767.5px) and (max-width:991px) {
@@ -335,9 +356,11 @@ body {
   padding: 5rem 3rem;
   margin:0;
   font-family: amabol;
+
   
   
 }
+
 
 .image:hover {
 //   // width: 50rem;
@@ -379,7 +402,7 @@ body {
 .logohero:hover {
   // position: relative;
   // top: -50rem;
-  // transition: 12s;
+   transition: 1s;
  zoom: 125%;
 }
 
