@@ -42,6 +42,12 @@ body {
   transition: transform -1s;
 }
 
+@media (max-width: 455px) {
+  .komu {
+    max-width: 6rem;
+    transition: 1s;
+  }
+}
 @media (min-width: 100px) and (max-width: 991px) {
   .pollo {
     width: 100;
@@ -64,6 +70,9 @@ body {
   }
   .image {
     transition: 2s;
+  }
+  .seva {
+    display: none;
   }
 }
 @media (min-width: 991.5px) {
@@ -129,6 +138,27 @@ body {
     max-width: 20rem;
     max-height: 18rem;
     transition: 1s;
+  }
+  .borderuno {
+    border-right: 0.2rem solid white;
+    border-top: 0.2rem solid white;
+  }
+  .borderdos {
+    border-bottom: 0.2rem solid white;
+    padding: 0.7rem;
+  }
+  .bordertres {
+    border-right: 0.2rem solid white;
+  }
+  .bordercinco {
+    border-top: 0.2rem solid white;
+    border-right: 0.2rem solid white;
+  }
+  .borderseis {
+    border-bottom: 0.2rem solid white;
+  }
+  .seva {
+    display: none;
   }
 }
 @media (min-width: 100px) and (max-width: 767px) {
