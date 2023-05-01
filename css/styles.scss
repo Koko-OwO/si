@@ -79,7 +79,7 @@ body {
     transition: 1s;
   }
   .image {
-    max-width: 6rem;
+    
     transition: 2s;
   }
 
@@ -160,6 +160,12 @@ body {
   .max {
     max-height: 30rem;
   }
+  .image:hover {
+    //   // width: 50rem;
+    //   position: relative;
+    //   transform:  0px 45px;
+        zoom: 150%;
+    }
 }
 
 @media (min-width:767.5px) and (max-width:991px) {
@@ -362,12 +368,7 @@ body {
 }
 
 
-.image:hover {
-//   // width: 50rem;
-//   position: relative;
-//   transform:  0px 45px;
-    zoom: 150%;
-}
+
 
 .text-logo {
   font-size: cover;

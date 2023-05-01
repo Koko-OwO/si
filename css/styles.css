@@ -63,7 +63,6 @@ body {
     transition: 1s;
   }
   .image {
-    max-width: 6rem;
     transition: 2s;
   }
 }
@@ -120,6 +119,9 @@ body {
   }
   .max {
     max-height: 30rem;
+  }
+  .image:hover {
+    zoom: 150%;
   }
 }
 @media (min-width: 767.5px) and (max-width: 991px) {
@@ -273,10 +275,6 @@ body {
   padding: 5rem 3rem;
   margin: 0;
   font-family: amabol;
-}
-
-.image:hover {
-  zoom: 150%;
 }
 
 .text-logo {
