@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: transform 1s;
+  font-family: amabol;
+}
+
+.lilon {
+  border-radius: 0px 0px 20px 20px;
+  color: white;
+  background-color: #000;
+  transition: 1s;
+}
+
+.sisa {
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 0rem 1rem white;
+}
+
+.lilon:hover {
+  background-color: #3f0b4c;
+  transition: 1s;
+}
+
+.despues:hover {
+  border-radius: 20px 0px 20px 0px;
+  background-color: #d17418 !important;
+  transition: 1s;
+}
+
+.despues {
+  transition: 1s;
+}
+
+.imagess {
+  width: 100;
+}
+
+.grande {
+  font-size: 1rem;
+}
+
+.grande2 {
+  font-size: 2rem;
+}
+
+.saligo {
+  height: 20rem;
+}/*# sourceMappingURL=trabajos.css.map */
